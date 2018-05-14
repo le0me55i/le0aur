@@ -1,0 +1,15 @@
+# /dev/sda3
+UUID=1cb35e31-9d09-45a8-81cd-faebaa31321d	/         	btrfs     	rw,noatime,compress=lzo,nossd,space_cache,autodefrag,subvol=@	0 0
+
+# /dev/sda3
+UUID=1cb35e31-9d09-45a8-81cd-faebaa31321d	/home     	btrfs     	rw,noatime,compress=lzo,nossd,space_cache,autodefrag,subvol=@home	0 0
+
+# /dev/sda5
+UUID=c6daa7bb-5b7f-4885-a65a-7309e7f36165	/home/le0me55i/ISOFILES		xfs	rw,noatime,defaults	0 0
+
+# /dev/sda1
+UUID=38C9-7AF0      	/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 0
+
+# /dev/sda2
+UUID=649c6802-5c89-4604-8c0e-d8dbbca56f13	none      	swap      	defaults,pri=-2	0 0
+
