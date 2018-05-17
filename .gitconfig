@@ -1,0 +1,11 @@
+# Это файл конфигурации пользователя Git.
+[user]
+# Пожалуйста, адаптируйте и раскомментируйте следующие строки:
+user = le0me55i
+email = buryk212@gmail.com
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	ps = push

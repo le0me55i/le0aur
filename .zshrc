@@ -60,9 +60,14 @@ alias df='df -h'                                                # Human-readable
 alias free='free -m'                                            # Show sizes in MB
 alias gitu='git add . && git commit && git push'
 alias cat="bat"
-alias ls="ls -h --color=auto"
-alias la="ls -lah"
+alias ls="ls -h --color=always"
+alias la="ls -lah --color=always"
 alias in='trizen'
+alias gcl='git clone'
+alias gc='git commit'
+alias ga="git add "
+alias gp='git push'
+alias gs='git status'
 # Theming section  
 autoload -U compinit colors zcalc
 compinit -d
