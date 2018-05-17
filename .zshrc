@@ -9,7 +9,7 @@ setopt nobeep                                                   # No beep
 setopt appendhistory                                            # Immediately append history instead of overwriting
 setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
 setopt autocd                                                   # if only directory path is entered, cd there.
-setopt sharehistory
+setopt SHARE_HISTORY
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
@@ -21,9 +21,9 @@ zstyle ':completion:*' cache-path ~/.zsh/cache
 HISTFILE=~/.zhistory
 HISTSIZE=99000
 SAVEHIST=99000
+export PATH="/usr/lib/ccache/bin:$PATH"
 export EDITOR=/usr/bin/micro
 export VISUAL=/usr/bin/micro
-export PATH="/usr/lib/ccache/bin:$PATH"
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
 
@@ -68,6 +68,7 @@ alias gc='git commit'
 alias ga="git add "
 alias gp='git push'
 alias gs='git status'
+
 # Theming section  
 autoload -U compinit colors zcalc
 compinit -d
@@ -161,6 +162,7 @@ export LESS=-r
 
 
 ## Plugins section: Enable fish style features
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Use syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Use history substring search
