@@ -25,7 +25,7 @@ export PATH="/usr/lib/ccache/bin:$PATH"
 export EDITOR=/usr/bin/micro
 export VISUAL=/usr/bin/micro
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
-
+source /usr/share/doc/find-the-command/ftc.zsh
 
 ## Keybindings section
 bindkey -e
